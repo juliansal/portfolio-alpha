@@ -1,1 +1,40 @@
+@import '../node_modules/bulma/css/bulma.css';
 /* You can add global styles to this file, and also import other style files */
+body, html {
+  background-color: rgb(56, 56, 56);
+}
+
+.navbar-brand {
+  margin: auto;
+}
+
+.gap {
+  margin-top: 60px;
+}
+
+.card {
+  -webkit-box-shadow: 0 2px 5px rgba(10, 10, 10, 0.7), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  box-shadow: 0 2px 5px rgba(10, 10, 10, 0.7), 0 0 0 1px rgba(10, 10, 10, 0.1);
+}
+
+.hero.is-dark a:not(.button):not(.dropdown-item):not(.tag).email, .hero.is-dark strong {
+  color: #ff3860;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.profile-name {
+  color: #ff3860;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profile-name:hover, .profile-name:focus, .profile-name:active {
+  color: whitesmoke;
+}
+
+.image.is-256 {
+  height: 256px;
+  width: 256px
+}
+
