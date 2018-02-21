@@ -8,6 +8,10 @@ body, html {
   margin: auto;
 }
 
+a.active {
+  background-color: #292929;
+}
+
 .gap {
   margin-top: 60px;
 }

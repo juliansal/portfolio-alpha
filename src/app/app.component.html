@@ -2,11 +2,11 @@
 	<div class="hero-head">
 		<nav class="navbar" role="navigation" aria-label="main navigation">
 			<div class="navbar-brand">
-				<a routerLink="/" class="navbar-item">Home</a>
-				<a routerLink="posts" class="navbar-item">Posts</a>
-				<a routerLink="contact" class="navbar-item">Contact</a>
+				<a routerLink="/" class="navbar-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+				<a routerLink="posts" class="navbar-item" routerLinkActive="active">Posts</a>
+        <a routerLink="contact" class="navbar-item" routerLinkActive="active">Contact</a>
 			</div>
 		</nav>
 	</div>
-  <router-outlet></router-outlet>
 </section>
+<router-outlet></router-outlet>
