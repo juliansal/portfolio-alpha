@@ -1,6 +1,8 @@
 {
   "name": "portfolio-alpha",
-  "version": "0.0.0",
+  "description": "Practice app to prepare for my future portfolio website, that'll be using Angular in the front-end.",
+  "author": "Julian Salguero",
+  "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
