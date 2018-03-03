@@ -6,6 +6,7 @@ import { PostsResolve } from './posts-resolve.service';
 import { PostComponent } from './post.component';
 import { PostsComponent } from './posts.component';
 
+
 const postsRoutes: Routes = [
 	{
 		path: '',
