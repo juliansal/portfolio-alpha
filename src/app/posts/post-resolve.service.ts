@@ -11,8 +11,10 @@ export class PostResolve implements Resolve<Post> {
 		const id = route.params['id'];
 		return this.service.getPost(id).then(post => {
 			if (post) {
+				console.log('post found');
 				return post;
 			} else {
+				console.log('post not found');
 				this.router.navigate(['post']);
 			}
 		});

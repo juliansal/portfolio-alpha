@@ -12,7 +12,7 @@ export class PostService {
 	getPost(id) {
 		const post = postsPromise.then(posts => {
 			return posts.find(singlePost => {
-				return singlePost.id === id;
+				return singlePost.id.toString() === id;
 			});
 		});
 		return post;
