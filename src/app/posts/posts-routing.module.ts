@@ -29,5 +29,6 @@ const postsRoutes: Routes = [
 		]
 	}
 ];
+
 export const postsRouting: ModuleWithProviders = RouterModule.forChild(postsRoutes);
 
