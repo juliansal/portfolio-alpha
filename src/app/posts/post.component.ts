@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Post } from './../shared/models/Post';
-import { PostService } from './../shared/services/post.service';
 
 @Component({
 	selector: 'app-post',
@@ -8,13 +8,14 @@ import { PostService } from './../shared/services/post.service';
 	styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
-	posts: Post[];
-	constructor(private service: PostService) { }
+	constructor(private route: ActivatedRoute, private router: Router) {}
+	post: Post;
 
 	ngOnInit() {
-		this.service.getPosts().then(posts => {
-			this.posts = posts;
+		this.route.data.forEach((data: {post: Post}) => {
+			this.post = data.post;
 		});
+		console.log(this.post);
 	}
 
 }
