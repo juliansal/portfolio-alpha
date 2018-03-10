@@ -8,7 +8,9 @@ export class PostsResolve implements Resolve<Post[]> {
 	constructor(private service: PostService) { }
 
 	resolve(route: ActivatedRouteSnapshot) {
-		return this.service.getPosts().then(posts => posts);
+		return this.service.getPosts().then(posts => {
+			return posts;
+		});
 	}
 
 }

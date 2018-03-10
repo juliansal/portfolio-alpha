@@ -1,79 +1,24 @@
-<section class="container is-dark is-medium">
-	<div class="box">
-		<article class="media">
-			<figure class="media-left">
-				<img class="image is-256" src="../../assets/img/lil-cloud.jpeg" alt="lil-cloud">
-			</figure>
-			<div class="media-content">
-				<div class="content">
-          <!-- Because this link in inside another component, use slash (/) in front to properly route -->
-					<p><a class="profile-name" [routerLink]="['/posts', '1' ]" >10 Things You Didn't Know About Clouds</a></p>
-					<div class="byline-meta">
-						<small>
-							<span class="name">Jimmy Green</span> |
-							<span class="date">12/30/2017</span>
-						</small>
+<section class="container is-dark is-medium gap">
+	<div class="columns is-multiline is-desktop">
+		<div *ngFor="let post of posts" class="column is-one-quarter">
+			<article class="media">
+				<div class="media-content">
+					<figure>
+						<img class="image" [src]="post.images[0]" alt="lil-cloud">
+					</figure>
+					<div class="content">
+						<p><a class="profile-name" [routerLink]="['/posts', post.id ]"  >{{ post.title }}</a></p>
+						<div class="byline-meta">
+							<small>
+								<span class="name">{{ post.author }}</span> |
+								<span class="date">{{ post.date }}</span>
+							</small>
+						</div>
+						<div [innerHTML]="post.body | safe: 'html'"></div>
 					</div>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed odio repellendus, illum assumenda deleniti dolor nisi amet exercitationem rerum ex pariatur nostrum voluptatem nihil quidem neque nemo sapiente voluptatibus modi?</p>
 				</div>
-			</div>
-		</article>
-	</div>
-	<div class="box">
-		<article class="media">
-			<figure class="media-left">
-				<img class="image is-256" src="../../assets/img/hapy-planet.jpeg" alt="lil-cloud">
-			</figure>
-			<div class="media-content">
-				<div class="content">
-					<p><a class="profile-name" href="#" >10 Things You Didn't Know About Clouds</a></p>
-					<div class="byline-meta">
-						<small>
-							<span class="name">Jimmy Green</span> |
-							<span class="date">12/30/2017</span>
-						</small>
-					</div>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed odio repellendus, illum assumenda deleniti dolor nisi amet exercitationem rerum ex pariatur nostrum voluptatem nihil quidem neque nemo sapiente voluptatibus modi?</p>
-				</div>
-			</div>
-		</article>
-	</div>
-	<div class="box">
-		<article class="media">
-			<figure class="media-left">
-				<img class="image is-256" src="../../assets/img/lil-whale.jpeg" alt="lil-cloud">
-			</figure>
-			<div class="media-content">
-				<div class="content">
-					<p><a class="profile-name" href="#" >10 Things You Didn't Know About Clouds</a></p>
-					<div class="byline-meta">
-						<small>
-							<span class="name">Jimmy Green</span> |
-							<span class="date">12/30/2017</span>
-						</small>
-					</div>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed odio repellendus, illum assumenda deleniti dolor nisi amet exercitationem rerum ex pariatur nostrum voluptatem nihil quidem neque nemo sapiente voluptatibus modi?</p>
-				</div>
-			</div>
-		</article>
-	</div>
-	<div class="box">
-		<article class="media">
-			<figure class="media-left">
-				<img class="image is-256" src="../../assets/img/lil-cloud.jpeg" alt="lil-cloud">
-			</figure>
-			<div class="media-content">
-				<div class="content">
-					<p><a class="profile-name" href="#" >10 Things You Didn't Know About Clouds</a></p>
-					<div class="byline-meta">
-						<small>
-							<span class="name">Jimmy Green</span> |
-							<span class="date">12/30/2017</span>
-						</small>
-					</div>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed odio repellendus, illum assumenda deleniti dolor nisi amet exercitationem rerum ex pariatur nostrum voluptatem nihil quidem neque nemo sapiente voluptatibus modi?</p>
-				</div>
-			</div>
-		</article>
+			</article>
+		</div>
 	</div>
 </section>
+
