@@ -1,9 +1,9 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 import { PostsSectionComponent } from './posts-section.component';
-import { PostResolve } from './post-resolve.service';
+import { PostResolve } from '../post/post-resolve.service';
 import { PostsResolve } from './posts-resolve.service';
-import { PostComponent } from './post.component';
+import { PostComponent } from '../post/post.component';
 import { PostsComponent } from './posts.component';
 
 

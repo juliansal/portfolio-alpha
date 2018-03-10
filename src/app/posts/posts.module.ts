@@ -1,8 +1,8 @@
 import { PostsResolve } from './posts-resolve.service';
-import { PostResolve } from './post-resolve.service';
+import { PostResolve } from '../post/post-resolve.service';
 import { PostService } from './../shared/services/post.service';
 import { PostsComponent } from './posts.component';
-import { PostComponent } from './post.component';
+import { PostComponent } from '../post/post.component';
 import { postsRouting } from './posts-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
