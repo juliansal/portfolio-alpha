@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Post } from '../models/Post';
+import { postsPromise } from '../mocks/postsMock';
+
 
 @Injectable()
 export class PostService {
@@ -20,22 +22,3 @@ export class PostService {
 
 
 }
-
-const postsPromise: Promise<Post[]> = Promise.resolve([
-	{
-		id: 1,
-		title: 'string',
-		author: 'string',
-		date: 'string',
-		body: 'string',
-		images: [''],
-	},
-	{
-		id: 2,
-		title: 'string',
-		author: 'string',
-		date: 'string',
-		body: 'string',
-		images: [''],
-	}
-]);

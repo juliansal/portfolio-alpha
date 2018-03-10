@@ -1,8 +1,13 @@
-<!-- <section class="container is-dark is-medium">
+<section class="container is-dark is-medium">
+	<div class="columns is-variable is-1">
+		<div class="column is-8">
+			<h2>{{ post.title }}</h2>
+		</div>
+	</div>
 	<div class="columns is-variable is-3">
 		<div class="column is-8">
 			<figure class="media-left">
-				<img class="image" src="../../assets/img/lil-cloud.jpeg" alt="lil-cloud">
+				<img class="image" [src]="post.images[0]" alt="lil-cloud">
 			</figure>
 		</div>
 		<div class="column is-4">
@@ -32,27 +37,6 @@
 		</div>
 	</div>
 	<div class="columns is-variable is-3">
-		<div class="column is-8">
-			<p>
-				This is the front end mock-up of a jobs board website. It is inspired by a design done by Mackenzie Child on his YouTube channel. Mackenzie’s design was a part of a Rails tutorial. Although I’ve chosen instead to expand upon the front end portion of the exercise.
-			</p>
-			<p>
-				My version of the project comes with two layouts; one for the main page and another for the results section. I also expanded on what the user could search for, by having an Advanced Search button to display more search options. Below the search fields are sections with jobs related news articles, and featured jobs to help showcase the jobs a visitor to the site can hope to find.
-			</p>
-		</div>
-  </div>
-
-  <div *ngIf="posts" class="list-group">
-    <div *ngFor="let post of posts" class="list-group-item">
-        <p>{{ post.title }}</p>
-    </div>
-  </div>
-</section> -->
-
-<!-- <h3>About User Page</h3>
-<div class="jumbotron text-center" *ngIf="post">
-    <h2>{{ post.id }} ({{ post.title }})</h2>
-
-</div> -->
-
-<h2>Hello</h2>
+		<div [innerHTML]="post.styling | safe: 'html'"></div>
+		<div class="column is-8 lightfont" [innerHTML]="post.body | safe: 'html'"></div>
+  	</div>
