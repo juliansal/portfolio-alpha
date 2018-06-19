@@ -1,21 +1,26 @@
-<section class="container is-dark is-medium gap">
+<section class="container gap body">
+	<h1 class="has-text-centered title is-1">Web Projects</h1>
 	<div class="columns is-multiline is-desktop">
 		<div *ngFor="let post of posts" class="column is-one-quarter">
 			<article class="media">
 				<div class="media-content">
 					<figure>
-						<img class="image" [src]="post.images[0]" alt="lil-cloud">
+						<a [routerLink]="['/posts', post.id ]" >
+							<img class="image" [src]="post.images[0]" alt="lil-cloud">
+						</a>
 					</figure>
 					<div class="content">
-						<p><a class="profile-name" [routerLink]="['/posts', post.id ]"  >{{ post.title }}</a></p>
+						<p><a class="profile-name" [routerLink]="['/posts', post.id ]" >{{ post.title }}</a></p>
 						<div class="byline-meta">
 							<small>
 								<span class="name">{{ post.author }}</span> |
 								<span class="date">{{ post.date }}</span>
 							</small>
 						</div>
-						<div [innerHTML]="post.body | safe: 'html'"></div>
+						<div class="excerpt" [innerHTML]="post.body | safe: 'html'"></div>
+						<p class="read-more"><a [routerLink]="['/posts', post.id ]" >[ Read More ]</a></p>
 					</div>
+
 				</div>
 			</article>
 		</div>

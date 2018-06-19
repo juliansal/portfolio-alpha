@@ -1,0 +1,20 @@
+
+p.post-link {
+	padding-bottom: 8px;
+}
+
+p.post-link > a {
+	color: #fff;
+	text-decoration-line: underline;
+	font-weight: 600;
+}
+
+p {
+	color: #fff;
+	font-size: 110%;
+	font-weight: 500;
+}
+
+.article-clip {
+	padding-bottom: 20px;
+}

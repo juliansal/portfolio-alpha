@@ -9,8 +9,34 @@ article.media {
 
 .media-content > .content {
 	padding: 5px 10px 10px;
+	min-height: 400px;
+	position: relative;
 }
 
 small {
 	color: rgba(80, 80, 80, .7);
+}
+
+.read-more {
+	text-align: right;
+	padding-top: 5px;
+}
+
+.read-more > a {
+	color: #ff3860;
+}
+
+.profile-name {
+	color: #ff3860;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 5px 0;
+}
+
+.profile-name:hover, .profile-name:focus, .profile-name:active {
+	color: #c2314e;
+}
+
+.excerpt {
+	color: #161616;
 }
