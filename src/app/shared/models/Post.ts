@@ -6,4 +6,7 @@ export class Post {
 	styling: string;
 	body: string;
 	images: string[];
+	client: string;
+	project_url: string;
+	skills: string[];
 }

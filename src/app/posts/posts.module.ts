@@ -8,15 +8,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PostsSectionComponent } from './posts-section.component';
 import { SafeHtmlPipe } from '../shared/pipes/safeHtml.pipe';
+import { ExcerptPipe } from './../shared/pipes/excerpt.pipe';
 
 @NgModule({
 	imports: [
 		CommonModule, postsRouting
 	],
 	declarations: [
-		PostComponent, PostsComponent, PostsSectionComponent, SafeHtmlPipe
+		PostComponent, PostsComponent, PostsSectionComponent, SafeHtmlPipe, ExcerptPipe
 	],
-	exports: [SafeHtmlPipe],
+	exports: [SafeHtmlPipe, ExcerptPipe],
 	providers: [
 		PostService, PostResolve, PostsResolve
 	]

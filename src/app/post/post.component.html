@@ -11,28 +11,23 @@
 			</figure>
 		</div>
 		<div class="column is-4">
-			<table class="table is-hoverable is-bordered is-dark is-fullwidth">
+			<table class="table is-hoverable is-bordered is-dark">
 				<tr>
 					<th>Project date</th>
-					<td>2018</td>
+					<td>{{ post.date }}</td>
 				</tr>
 				<tr>
 					<th>Client</th>
-					<td>Julian Design Studio</td>
+					<td>{{ post.client }}</td>
 				</tr>
 				<tr>
 					<th>Project URL</th>
-					<td>Jobverse</td>
+					<td>{{ post.project_url }}</td>
 				</tr>
 			</table>
 
-			<ul class="project-skills">
-				<li>CSS</li>
-				<li>HTML</li>
-				<li>JavaScript</li>
-				<li>UI/UX Design</li>
-				<li>Angular</li>
-				<li>Laravel</li>
+			<ul class="project-skills" *ngFor="let skill of post.skills">
+				<li>{{ skill }}</li>
 			</ul>
 		</div>
 	</div>
@@ -40,3 +35,4 @@
 		<div [innerHTML]="post.styling | safe: 'html'"></div>
 		<div class="column is-8 lightfont" [innerHTML]="post.body | safe: 'html'"></div>
   	</div>
+</section>

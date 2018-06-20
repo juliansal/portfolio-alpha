@@ -12,6 +12,9 @@ export const postsPromise: Promise<Post[]> = Promise.resolve([
 		body: '<p class="light"><span>This is the front end</span> of a jobs board website.</p>\
 		<p class="light"><span>This is the front end</span> of a jobs board website.</p>',
 		images: ['../../assets/img/lil-cloud.jpeg'],
+		client: 'Julian Design Studio',
+		project_url: '#',
+		skills: ['CSS', 'HTML', 'JavaScript', 'UI/UX Design', 'Angular', 'Laravel']
 	},
 	{
 		id: 4,
@@ -21,19 +24,14 @@ export const postsPromise: Promise<Post[]> = Promise.resolve([
 		styling: postStyling,
 		body: '<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p><p>Sed odio repellendus,\
 		 illum assumenda deleniti dolor nisi amet exercitationem rerum ex pariatur nostrum\
+		  voluptatem nihil quidem neque nemo sapiente voluptatibus modi?</p><p>Lorem, ipsum\
+		  dolor sit amet consectetur adipisicing elit.</p><p>Sed odio repellendus,\
+		  illum assumenda deleniti dolor nisi amet exercitationem rerum ex pariatur nostrum\
 		  voluptatem nihil quidem neque nemo sapiente voluptatibus modi?</p>',
 		images: ['../../assets/img/lil-whale.jpeg'],
-	},
-	{
-		id: 3,
-		title: '10 Things You Didn\'t Know About Clouds',
-		author: 'Jimmy Green',
-		date: '01/03/2018',
-		styling: postStyling,
-		body: '<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed odio repellendus,\
-		 illum assumenda deleniti dolor nisi amet exercitationem rerum ex pariatur nostrum\
-		  voluptatem nihil quidem neque nemo sapiente voluptatibus modi?</p>',
-		images: ['../../assets/img/lil-whale.jpeg'],
+		client: 'Julian Design Studio',
+		project_url: '#',
+		skills: ['CSS', 'HTML', 'JavaScript', 'UI/UX Design', 'Angular', 'Laravel']
 	},
 	{
 		id: 2,
@@ -45,6 +43,9 @@ export const postsPromise: Promise<Post[]> = Promise.resolve([
 		 illum assumenda deleniti dolor nisi amet exercitationem rerum ex pariatur nostrum\
 		  voluptatem nihil quidem neque nemo sapiente voluptatibus modi?</p>',
 		images: ['../../assets/img/lil-whale.jpeg'],
+		client: 'Julian Design Studio',
+		project_url: '#',
+		skills: ['CSS', 'HTML', 'JavaScript', 'UI/UX Design', 'Angular', 'Laravel']
 	},
 	{
 		id: 1,
@@ -56,6 +57,9 @@ export const postsPromise: Promise<Post[]> = Promise.resolve([
 		 illum assumenda deleniti dolor nisi amet exercitationem rerum ex pariatur nostrum\
 		  voluptatem nihil quidem neque nemo sapiente voluptatibus modi?</p>',
 		images: ['../../assets/img/lil-whale.jpeg'],
+		client: 'Julian Design Studio',
+		project_url: '#',
+		skills: ['CSS', 'HTML', 'JavaScript', 'UI/UX Design', 'Angular', 'Laravel']
 	}
 ]);
 

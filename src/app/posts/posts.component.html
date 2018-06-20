@@ -17,7 +17,7 @@
 								<span class="date">{{ post.date }}</span>
 							</small>
 						</div>
-						<div class="excerpt" [innerHTML]="post.body | safe: 'html'"></div>
+						<div class="excerpt" [innerHTML]="post.body | excerpt: 240"></div>
 						<p class="read-more"><a [routerLink]="['/posts', post.id ]" >[ Read More ]</a></p>
 					</div>
 
