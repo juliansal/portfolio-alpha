@@ -9,11 +9,11 @@ html {
 	background-color: #292929;
 }
 body {
-  background-color: #363636;
-  font-family: "Monaco", Monaco, monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #fff;
+	background-color: #363636;
+	font-family: "Monaco", Monaco, monospace;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: #fff;
 }
 
 .container {
@@ -27,46 +27,12 @@ body {
 }
 
 .footer {
-	min-height: 60px;
 	background-color: #292929;
+	padding: 1px 0 40px;
 }
 
 .navbar-brand {
-  margin: auto;
-}
-
-a.active {
-  background-color: #292929;
-}
-
-.gap {
-  margin-top: 60px;
-}
-
-.card {
-  -webkit-box-shadow: 0 2px 5px rgba(10, 10, 10, 0.7), 0 0 0 1px rgba(10, 10, 10, 0.1);
-  box-shadow: 0 2px 5px rgba(10, 10, 10, 0.7), 0 0 0 1px rgba(10, 10, 10, 0.1);
-}
-
-.hero.is-dark a:not(.button):not(.dropdown-item):not(.tag).email, .hero.is-dark strong {
-  color: #ff3860;
-  font-size: 32px;
-  font-weight: 300;
-}
-
-.profile-name {
-  color: #ff3860;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.image.is-256 {
-  height: 256px;
-  width: 256px
-}
-
-.is-red, .title {
-	color: #ff3860;
+	margin: auto;
 }
 
 h3, .h3 {
@@ -82,10 +48,66 @@ h5, .h5 {
 	font-size: 20px;
 }
 
+a.is-red:hover, a.is-red:focus, a.is-red:active {
+	color: #c2314e;
+}
+
+.gap {
+  	margin-top: 60px;
+}
+
+.card {
+	-webkit-box-shadow: 0 2px 5px rgba(10, 10, 10, 0.7), 0 0 0 1px rgba(10, 10, 10, 0.1);
+	box-shadow: 0 2px 5px rgba(10, 10, 10, 0.7), 0 0 0 1px rgba(10, 10, 10, 0.1);
+}
+
+.hero.is-dark a:not(.button):not(.dropdown-item):not(.tag).email, .hero.is-dark strong {
+	color: #ff3860;
+	font-size: 32px;
+	font-weight: 300;
+}
+
+.profile-name {
+	color: #ff3860;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.image.is-256 {
+	height: 256px;
+	width: 256px
+}
+
+.is-red, .title {
+	color: #ff3860;
+}
+
 .heading {
 	color: #ff3860;
 	padding-bottom: 10px;
 	font-weight: 500;
 }
 
+.button.is-primary.is-outlined:hover, .button.is-primary.is-outlined:focus {
+    background-color: #ff3860;
+    border-color: #ff3860;
+    color: #fff;
+}
+.button.is-primary.is-outlined {
+    background-color: transparent;
+    border-color: #ff3860;
+    color: #ff3860;
+}
+.button.is-primary {
+    background-color: #ff3860;
+    border-color: transparent;
+    color: #fff;
+}
 
+.button.is-primary:hover, .button.is-primary.is-hovered, .button.is-primary:focus, .button.is-primary:active {
+    background-color: #ff3860;
+    border-color: transparent;
+	color: #fff;
+	-webkit-box-shadow: 0 2px 5px rgba(10, 10, 10, 0.7), 0 0 0 1px rgba(10, 10, 10, 0.1);
+	box-shadow: 0 2px 5px rgba(10, 10, 10, 0.7), 0 0 0 1px rgba(10, 10, 10, 0.1);
+}

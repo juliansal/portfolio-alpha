@@ -1,7 +1,7 @@
-<section class="container is-dark is-medium">
+<section class="container body is-medium">
 	<div class="columns is-variable is-1">
 		<div class="column is-8">
-			<h2>{{ post.title }}</h2>
+			<h1 class="title is-2">{{ post.title }}</h1>
 		</div>
 	</div>
 	<div class="columns is-variable is-3">
@@ -27,7 +27,7 @@
 			</table>
 
 			<ul class="project-skills" *ngFor="let skill of post.skills">
-				<li>{{ skill }}</li>
+				<li class="is-red">{{ skill }}</li>
 			</ul>
 		</div>
 	</div>

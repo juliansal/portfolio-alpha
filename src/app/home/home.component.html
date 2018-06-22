@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/themes/prism-okaidia.min.css"/>
 <section class="hero is-dark is-medium">
     <div class="hero-body">
 		<div class="container">
@@ -5,16 +6,18 @@
 				<div class="column">
 					<h1 class="subtitle h4">Hello, my name is <span class="is-red">Julian Salguero</span> and <br />
 					I am a web developer.</h1>
-					<p>Full Stack JavaScript Developer | SDET</p>
+					<p>JavaScript Developer | SDET</p>
 					<div class="buttons">
-						<a href="https://github.com/juliansal/portfolio-alpha" target="_blank" class="button is-primary is-outlined">Github</a>
-						<a href="https://www.linkedin.com/in/julio-salguero-a9b22075/" target="_blank" class="button is-danger is-outlined">LinkedIn</a>
+						<a href="https://github.com/juliansal/portfolio-alpha" target="_blank" class="button is-primary">Github</a>
+						<a href="https://www.linkedin.com/in/julio-salguero-a9b22075/" target="_blank" class="button is-primary is-outlined">LinkedIn</a>
 					</div>
 				</div>
 				<div class="column">
 					<figure class="image card">
 						<img src="https://blogsimages.adobe.com/creativecloud/files/2016/09/code3-600x313.png" alt="html code">
 					</figure>
+					<prism-block [code]="tsCode" [language]="'typescript'"></prism-block>
+
 				</div>
 			</div>
 		</div>

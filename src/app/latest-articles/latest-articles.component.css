@@ -9,6 +9,10 @@ p.post-link > a {
 	font-weight: 600;
 }
 
+p.post-link > a:hover {
+	text-shadow: 0 2px 5px rgba(10, 10, 10, 0.7);
+}
+
 p {
 	color: #fff;
 	font-size: 110%;
