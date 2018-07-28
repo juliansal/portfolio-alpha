@@ -1,5 +1,6 @@
+
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute} from '@angular/router';
 import { Post } from './../shared/models/Post';
 
 @Component({
@@ -8,7 +9,7 @@ import { Post } from './../shared/models/Post';
 	styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
-	constructor(private route: ActivatedRoute, private router: Router) {}
+	constructor(private route: ActivatedRoute) {}
 	post: Post;
 
 	ngOnInit() {
@@ -19,3 +20,5 @@ export class PostComponent implements OnInit {
 	}
 
 }
+
+
