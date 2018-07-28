@@ -18,12 +18,13 @@ body {
 
 .container {
 	max-width: 1200px;
-	width: 1200px;
 }
 
 .body, .hero.is-medium .hero-body {
-	padding-bottom: 8rem;
-	padding-top: 1rem;
+	/* padding-bottom: 8rem;
+	padding-top: 1rem; */
+	padding: 0.5rem 1.5rem;
+	margin-bottom: 80px;
 }
 
 .footer {
